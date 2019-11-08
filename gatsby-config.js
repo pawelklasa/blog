@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pawel Klasa Blog`,
+    title: `PavKa`,
     author: `Pawel Klasa`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -8,6 +8,23 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
+  plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Oswald`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    }
+  ]
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -76,3 +93,4 @@ module.exports = {
     },
   ],
 }
+
