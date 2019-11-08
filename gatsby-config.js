@@ -8,23 +8,7 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
-  plugins: [
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
-    }
-  ]
+  
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
